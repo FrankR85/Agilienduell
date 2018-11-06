@@ -1,3 +1,7 @@
+body {
+	background: #000;
+}
+
 .textColor  {
     color:#aeb130;
     font-weight:bold;
@@ -50,4 +54,27 @@
 	position:absolute; 
 	top:15px; 
 	left:15px;
+}
+
+.intro {
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+	background: #000;
+	width: 150%;
+}
+
+.intro img, #frame img {
+	border-radius: 40px;
+}
+
+#frame {
+	position: absolute;
+	top: -19px;
+	left: -28px;
+	z-index: 1000;
+}
+
+.controller {
+	background: #fff;
 }

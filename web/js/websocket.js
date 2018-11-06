@@ -21,6 +21,7 @@ if(window.location.href.indexOf("viewonly")!==-1) {
 
 $(document).ready(function() {
 	$("#displayBtn").click(function() {
+		$("#frame").hide();
 		$("#startDiv").hide();
 		$("#display").show();
 		$(".controller").hide();
@@ -32,6 +33,7 @@ $(document).ready(function() {
 		$("#startDiv").hide();
 		$("#display").show();
 		$(".controller").show();
+		$('#frame').remove();
 		display = false;
 	});
 
@@ -160,9 +162,9 @@ var connectWs = function() {
 			if(schweinchen != null)
 				schweinchen.volume = schweinchenVolume;
 		} else if(key == "toggleBlackScreen") {
-			if(display) {
-				$("#blackScreen").toggle();
-			}
+			// if(display) {
+			// 	$("#blackScreen").toggle();
+			// }
 		} else if (key == "toggleFinalMode"){
 			setFinalMode(value);
 		}
