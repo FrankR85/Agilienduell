@@ -80,6 +80,11 @@ body {
 	background: #fff;
 }
 
+#allContent {
+	position: relative;
+	top: calc(50% - 265px);
+}
+
 #display {
-	margin: calc(50% - 530px) auto auto;
+	margin: auto;
 }
