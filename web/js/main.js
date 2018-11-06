@@ -239,6 +239,9 @@ function stopSchweinchen() {
 
 function hideIntro() {
   $("#frame").show();
+  if (!display) {
+  	$('#display').css('margin-top', '');
+  }
 	$(".noIntro").show();
 	$(".intro").hide();
 	if(!$("#modeFinal").is(":checked")) {

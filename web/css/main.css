@@ -58,10 +58,11 @@ body {
 
 .intro {
 	position: absolute;
-	top: 0px;
+	top: 30px;
 	overflow: hidden;
 	background: #000;
 	width: 150%;
+	margin-top: calc(50% - 530px);
 }
 
 .intro img, #frame img {
@@ -77,4 +78,8 @@ body {
 
 .controller {
 	background: #fff;
+}
+
+#display {
+	margin: calc(50% - 530px) auto auto;
 }
