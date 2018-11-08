@@ -197,7 +197,7 @@ function setRightPoints(newPoints) {
 
 function startAnswerFail() {
 	if(sounds && (display || serverSound)) {
-		answerFail = new Audio('./sounds/failFinal.ogg');
+		answerFail = new Audio('./sounds/fail.mp3');
 		answerFail.volume = answerFailVolume;
 		answerFail.play();
 	}
@@ -216,7 +216,8 @@ function startSchweinchen() {
 	$("#displayQuestions").hide();
 	
 	if(sounds && (display || serverSound)) {
-		schweinchen = new Audio('./sounds/schweinchen.ogg');
+		schweinchen = null;
+		schweinchen = new Audio('./sounds/schweinchen.mp3');
 		schweinchen.volume = schweinchenVolume;
 		schweinchen.play();
 	}
