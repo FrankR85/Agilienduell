@@ -395,7 +395,7 @@ function setAnswer(index, answer) {
 		var el = $($("#answers").find(answer_select)[index]);
 		el.empty();
 		if(sounds && (display || serverSound)) {
-			audio = new Audio('./sounds/textRichtig.ogg');
+			audio = new Audio('./sounds/textRichtig.mp3');
 			audio.play();
 		}
 		el.typed({
@@ -418,7 +418,7 @@ function setAnz(index, nr) {
 		var el = $($("#answers").find(points_select)[index]);
 		el.text(nr);
 		if(sounds && (display || serverSound)) {
-			audio = new Audio('./sounds/zahlRichtig.ogg');
+			audio = new Audio('./sounds/zahlRichtig.mp3');
 			audio.play();
 		}
 		recalcSum(nr);
