@@ -256,7 +256,7 @@ function showIntro() {
 	$(".noIntro").hide();
 	$(".intro").show();
 	if(sounds && (display || serverSound)) {
-		intro = new Audio('./sounds/intro.ogg');
+		intro = new Audio('./sounds/Agilienduell.mp3');
 		intro.volume = introVolume;
 		intro.play();
 	}
